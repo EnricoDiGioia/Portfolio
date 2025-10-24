@@ -1,0 +1,104 @@
+/* PDF-like CV style: two columns, classic look */
+body {
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-pdf {
+  display: flex;
+  flex-direction: row;
+  max-width: 1050px;
+  background: #fff;
+  margin: 40px auto;
+  box-shadow: 0 3px 24px rgba(0,0,0,0.10);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+aside {
+  width: 310px;
+  background: #f6f7fb;
+  border-right: 2px solid #e0e0e0;
+  padding: 32px 26px 32px 32px;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+  padding: 38px 50px 38px 50px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 6px;
+  color: #23395d;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.17em;
+  color: #2d7ff9;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.job-title {
+  color: #666;
+  font-size: 1.05em;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  padding-left: 16px;
+  margin: 0;
+}
+
+aside li {
+  margin-bottom: 6px;
+  font-size: 1em;
+}
+
+a {
+  color: #2d7ff9;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  color: #888;
+  font-size: 0.97em;
+  margin-left: 2px;
+}
+
+main ul {
+  margin: 0 0 6px 20px;
+  padding: 0;
+}
+
+main li {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+  .cv-pdf {
+    flex-direction: column;
+  }
+  aside, main {
+    width: 100%;
+    padding: 22px 18px;
+  }
+}
